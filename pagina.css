@@ -1,0 +1,336 @@
+/* ===================================================
+   VARIABLES DE COLOR Y FUENTES GLOBALES
+   =================================================== */
+
+:root {
+    --bg-dark: #2d3238;
+    --bg-gray-section: #73797f;
+    --text-serif: 'Cormorant Garamond', serif;
+    --text-sans: 'Montserrat', sans-serif;
+    --accent-gold: #d4af37;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--text-sans);
+    color: #333333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .brand-text, .font-serif {
+    font-family: var(--text-serif);
+}
+
+/* Ícono del Ramo de Flores SVG */
+.brand-bouquet-icon {
+    width: 28px;
+    height: 28px;
+    stroke: #ffffff;
+    flex-shrink: 0;
+}
+
+.feature-bouquet-svg {
+    width: 3rem;
+    height: 3rem;
+    stroke: var(--bg-dark);
+}
+
+/* ===================================================
+   BARRA DE NAVEGACIÓN (NAVBAR)
+   =================================================== */
+
+.bg-dark-custom {
+    background-color: rgba(45, 50, 56, 0.95) !important;
+    backdrop-filter: blur(5px);
+}
+
+.brand-text {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem !important;
+}
+
+.header-contact small {
+    white-space: nowrap;
+}
+
+/* ===================================================
+   SECCIÓN PRINCIPAL (HERO)
+   =================================================== */
+
+.hero-section {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 1.4;
+}
+
+/* ===================================================
+   SEPARADORES DECORATIVOS
+   =================================================== */
+
+.custom-shape-divider-top-gray,
+.custom-shape-divider-bottom-gray,
+.custom-shape-divider-top-dark {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-gray svg,
+.custom-shape-divider-bottom-gray svg,
+.custom-shape-divider-top-dark svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* ===================================================
+   SECCIÓN: POR QUÉ NOSOTROS (5 ÍCONOS EN GRID)
+   =================================================== */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    font-size: 2.8rem;
+    color: var(--bg-dark);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-text {
+    font-size: 0.95rem;
+    color: #444;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* ===================================================
+   SECCIÓN: CATÁLOGO DE TARJETAS (CSS GRID)
+   =================================================== */
+
+.catalog-section {
+    background-color: var(--bg-gray-section);
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.flower-card {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.flower-card:hover {
+    transform: translateY(-5px);
+}
+
+.flower-card.featured {
+    border: 2px solid var(--bg-dark);
+    transform: scale(1.05);
+}
+
+.flower-card.featured:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.card-img-wrapper {
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body-custom {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.card-body-custom h5 {
+    font-family: var(--text-serif);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-body-custom .price {
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 0.5rem;
+}
+
+.btn-dark-custom {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-dark-custom:hover {
+    background-color: #1a1d20;
+    color: #ffffff;
+}
+
+/* ===================================================
+   SECCIÓN: ENTREGA Y MÉTODOS DE PAGO
+   =================================================== */
+
+.delivery-box {
+    max-width: 700px;
+    background-color: #fafafa;
+}
+
+/* ===================================================
+   SECCIÓN: VIDEO DE REFERENCIA (LOCAL)
+   =================================================== */
+
+.video-container {
+    max-width: 750px;
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===================================================
+   PIE DE PÁGINA (FOOTER)
+   =================================================== */
+
+.footer-custom {
+    background-color: var(--bg-dark);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-grid h5 {
+    font-family: var(--text-serif);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.footer-grid a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-grid a:hover {
+    color: #ffffff;
+}
+
+/* ===================================================
+   DISEÑO RESPONSIVE (MEDIA QUERIES)
+   =================================================== */
+
+@media (max-width: 991px) {
+    .brand-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .flower-card.featured {
+        transform: scale(1);
+    }
+
+    .flower-card.featured:hover {
+        transform: translateY(-5px);
+    }
+}

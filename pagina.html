@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles y manualidades con amor Terri</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS Personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. ENCABEZADO Y BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo con Ramo de Flores SVG -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <svg class="brand-bouquet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="7" r="2.5"></circle>
+                    <circle cx="12" cy="5" r="2.5"></circle>
+                    <circle cx="16" cy="7" r="2.5"></circle>
+                    <path d="M6 10c0 2 2 3.5 6 3.5s6-1.5 6-3.5"></path>
+                    <path d="M12 13.5V19"></path>
+                    <path d="M9 14l-2.5 5"></path>
+                    <path d="M15 14l2.5 5"></path>
+                    <path d="M10 17h4"></path>
+                </svg>
+                <span class="brand-text">Detalles y manualidades con amor Terri</span>
+            </a>
+
+            <!-- Botón Toggler Responsive -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces del Menú -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Entrega</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Carrito</a></li>
+                    <!-- Nueva pestaña de Video de referencia -->
+                    <li class="nav-item"><a class="nav-link" href="#video-referencia">Video de referencia</a></li>
+                </ul>
+                <div class="d-flex align-items-center text-light gap-3 header-contact">
+                    <small><i class="bi bi-telephone me-1"></i> +51 930-475-823</small>
+                    <button class="btn btn-outline-light btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#contactoModal">Solicitar llamada</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. SECCIÓN PRINCIPAL / HERO -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-dark">
+            <h1 class="display-3 hero-title">Detalles y manualidades con amor Terri</h1>
+            <p class="hero-subtitle">Flores y manualidades hechas a mano con amor y delicadeza para tu persona favorita.</p>
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+                <a href="#servicios" class="btn btn-dark rounded-pill px-4 py-2 fw-semibold">Elegir detalle</a>
+                <button class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold" data-bs-toggle="modal" data-bs-target="#contactoModal">Pedido personalizado</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. POR QUÉ NOSOTROS (5 ÍCONOS) -->
+    <section class="py-5 bg-white">
+        <div class="container py-4 text-center">
+            <h2 class="section-title mb-5">¿Por qué nosotros?</h2>
+            <div class="features-grid">
+                <!-- 1. Ubicación -->
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-geo-alt"></i></div>
+                    <p class="feature-text">Nos ubicamos en Cerro de Pasco</p>
+                </div>
+
+                <!-- 2. Ramo de flores SVG -->
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg class="feature-bouquet-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8" cy="7" r="2.5"></circle>
+                            <circle cx="12" cy="5" r="2.5"></circle>
+                            <circle cx="16" cy="7" r="2.5"></circle>
+                            <path d="M6 10c0 2 2 3.5 6 3.5s6-1.5 6-3.5"></path>
+                            <path d="M12 13.5V20"></path>
+                            <path d="M9.5 14l-3 6"></path>
+                            <path d="M14.5 14l3 6"></path>
+                            <path d="M9.5 17.5h5"></path>
+                        </svg>
+                    </div>
+                    <p class="feature-text">Expertos en crear manualidades y detalles únicos a tu gusto</p>
+                </div>
+
+                <!-- 3. Reloj -->
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-clock"></i></div>
+                    <p class="feature-text">¡Todos tus detalles a la hora que tú pidas!</p>
+                </div>
+
+                <!-- 4. Trofeo -->
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-trophy"></i></div>
+                    <p class="feature-text">+de 1000 entregas con éxito</p>
+                </div>
+
+                <!-- 5. Equipo -->
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="bi bi-people"></i></div>
+                    <p class="feature-text">Un equipo de 5 personas y 2 de entregas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador Decorativo superior gris -->
+    <div class="custom-shape-divider-top-gray">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C300,90 600,-40 900,60 C1050,110 1150,40 1200,20 L1200,120 L0,120 Z" fill="#73797f"></path>
+        </svg>
+    </div>
+
+    <!-- 4. CATÁLOGO -->
+    <section id="servicios" class="catalog-section py-5 text-white">
+        <div class="container py-4">
+            <h2 class="section-title text-center text-white mb-5">Catálogo</h2>
+
+            <div class="catalog-grid">
+                 <!-- Tarjeta 1 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto1.jpg.jpeg" alt="MAQUETAS ESCOLARES">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>MAQUETAS ESCOLARES</h5>
+                        <p class="price">S/ 50.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto2.jpg.jpeg" alt="FLORES DE CINTA">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>FLORES DE CINTA</h5>
+                        <p class="price">S/ 65.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto3.jpg.jpeg" alt="FLORES DE LIMPIAPIPAS">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>FLORES DE LIMPIAPIPAS</h5>
+                        <p class="price">S/ 45.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto4.jpg.jpeg" alt="CAJAS PERSONALIZADAS">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>CAJAS PERSONALISADAS</h5>
+                        <p class="price">S/ 80.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto5.jpg.jpeg" alt="DISFRACES">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>DISFRACES</h5>
+                        <p class="price">S/ 55.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+                 <!-- Tarjeta 6 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto6.jpg.jpeg" alt="FLORES TEJIDAS">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>FLORES TEJIDAS</h5>
+                        <p class="price">S/ 55.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+                 <!-- Tarjeta 7 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto7.jpg.jpeg" alt="MESSI">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>MESSI</h5>
+                        <p class="price">S/ 55.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+                 <!-- Tarjeta 8 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto8.jpg.jpeg" alt="CAJAS CUMPLEAÑEROS">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>CAJAS CUMPLEAÑEROS</h5>
+                        <p class="price">S/ 55.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+                 <!-- Tarjeta 9 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto9.jpg.jpeg" alt="AMIGURRUMIS PERSONALISADAS">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>AMIGURRUMIS PERSONALISADAS</h5>
+                        <p class="price">S/ 55.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+                 <!-- Tarjeta 10 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto10.jpg.jpeg" alt="CRISTIANO RONALDO">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>CRISTIANO RONALDO</h5>
+                        <p class="price">S/ 55.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+                 <!-- Tarjeta 11 -->
+                <div class="flower-card">
+                    <div class="card-img-wrapper">
+                        <img src="foto11.jpg.jpeg" alt="CAJAS SORPRESAS">
+                    </div>
+                    <div class="card-body-custom">
+                        <h5>CAJAS SORPRESAS</h5>
+                        <p class="price">S/ 55.00</p>
+                        <button class="btn btn-buy-custom btn-sm rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar Detalle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador Decorativo inferior gris -->
+    <div class="custom-shape-divider-bottom-gray">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C200,80 500,-20 800,70 C1000,110 1150,30 1200,10 L1200,120 L0,120 Z" fill="#ffffff"></path>
+        </svg>
+    </div>
+
+    <!-- 5. ENTREGA -->
+    <section id="nosotros" class="py-5 bg-white">
+        <div class="container py-4 text-center">
+            <h2 class="section-title mb-4">Entrega</h2>
+            <div class="delivery-box mx-auto p-4 p-md-5 rounded-4 shadow-sm border">
+                <p class="lead text-muted mb-4">La entrega se realiza diariamente en el horario conveniente para usted en Cerro de Pasco. Elija su detalle en el catálogo o solicite uno personalizado con pago en línea o contra entrega.</p>
+                <div class="payment-methods d-flex justify-content-center align-items-center gap-4 flex-wrap">
+                    <span class="fw-bold text-uppercase text-secondary">Aceptamos:</span>
+                    <i class="bi bi-credit-card-2-front fs-2 text-dark" title="VISA"></i>
+                    <i class="bi bi-wallet2 fs-2 text-dark" title="Mastercard"></i>
+                    <i class="bi bi-qr-code-scan fs-2 text-dark" title="Yape / PLIN"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. VIDEO DE REFERENCIA (LOCAL) -->
+    <section id="video-referencia" class="py-5 bg-light border-top">
+        <div class="container py-4 text-center">
+            <h2 class="section-title mb-3">Video de referencia</h2>
+            <p class="text-muted mb-4">Conoce más sobre cómo elaboramos nuestros detalles hechos a mano.</p>
+            <div class="video-container mx-auto">
+                <video controls width="100%" class="rounded-3 shadow">
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador hacia el footer -->
+    <div class="custom-shape-divider-top-dark">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C150,90 400,0 700,70 C950,120 1100,20 1200,0 L1200,120 L0,120 Z" fill="#2d3238"></path>
+        </svg>
+    </div>
+
+    <!-- 7. PIE DE PÁGINA / FOOTER -->
+    <footer id="contacto" class="footer-custom text-white py-5">
+        <div class="container">
+            <h2 class="section-title text-center text-white mb-5">Contactos</h2>
+            
+            <div class="footer-grid">
+                <div class="footer-brand text-center text-md-start">
+                    <a class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3 justify-content-center justify-content-md-start" href="#">
+                        <svg class="brand-bouquet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8" cy="7" r="2.5"></circle>
+                            <circle cx="12" cy="5" r="2.5"></circle>
+                            <circle cx="16" cy="7" r="2.5"></circle>
+                            <path d="M6 10c0 2 2 3.5 6 3.5s6-1.5 6-3.5"></path>
+                            <path d="M12 13.5V19"></path>
+                            <path d="M9 14l-2.5 5"></path>
+                            <path d="M15 14l2.5 5"></path>
+                            <path d="M10 17h4"></path>
+                        </svg>
+                        <span class="brand-text">Detalles y manualidades con amor Terri</span>
+                    </a>
+                    <p class="small text-light-50">Flores de cinta, tejidas, limpiapipas, maquetas y peluches hechos a mano con amor.</p>
+                </div>
+                <div class="footer-nav text-center text-md-start">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio">Sobre nosotros</a></li>
+                        <li><a href="#servicios">Catálogo</a></li>
+                        <li><a href="#nosotros">Entrega</a></li>
+                        <li><a href="#video-referencia">Video de referencia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info text-center text-md-start">
+                    <h5>Ubicación</h5>
+                    <p class="small mb-1"><i class="bi bi-geo-alt me-1"></i> Cerro de Pasco, Perú</p>
+                    <p class="small"><i class="bi bi-telephone me-1"></i> +51 930-475-823</p>
+                </div>
+                <div class="footer-social text-center text-md-start">
+                    <h5>Síguenos</h5>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start fs-5">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/51930475823" target="_blank" class="text-white"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary">
+            <div class="d-flex justify-content-between align-items-center flex-wrap small text-light-50 gap-2">
+                <span>&copy; 2026 Detalles y manualidades con amor Terri. Todos los derechos reservados.</span>
+                <span>Política de Privacidad</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL BOOTSTRAP -->
+    <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4">
+                <div class="modal-header bg-dark-custom text-white border-0">
+                    <h5 class="modal-title font-serif d-flex align-items-center gap-2" id="contactoModalLabel">
+                        <svg class="brand-bouquet-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8" cy="7" r="2.5"></circle>
+                            <circle cx="12" cy="5" r="2.5"></circle>
+                            <circle cx="16" cy="7" r="2.5"></circle>
+                            <path d="M6 10c0 2 2 3.5 6 3.5s6-1.5 6-3.5"></path>
+                            <path d="M12 13.5V19"></path>
+                            <path d="M9 14l-2.5 5"></path>
+                            <path d="M15 14l2.5 5"></path>
+                            <path d="M10 17h4"></path>
+                        </svg>
+                        Solicitar Pedido Personalizado
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="orderForm">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label small text-uppercase fw-bold">Nombre</label>
+                            <input type="text" class="form-control rounded-pill px-3" id="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label small text-uppercase fw-bold">Teléfono / WhatsApp</label>
+                            <input type="tel" class="form-control rounded-pill px-3" id="telefono" required value="+51 930-475-823">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ocasion" class="form-label small text-uppercase fw-bold">Producto o Trabajo</label>
+                            <select class="form-select rounded-pill px-3" id="ocasion">
+                                <option selected>Flores de Cinta</option>
+                                <option>Flores Tejidas</option>
+                                <option>Flores de Limpiapipas</option>
+                                <option>Maquetas de Exposición</option>
+                                <option>Peluches Tejidos</option>
+                                <option>Otro Detalle</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="detalles" class="form-label small text-uppercase fw-bold">Detalles del pedido</label>
+                            <textarea class="form-control rounded-3" id="detalles" rows="3" placeholder="Especifica colores, temática o detalles de la maqueta..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark-custom w-100 rounded-pill py-2 font-serif">Enviar Pedido</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
